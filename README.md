@@ -1,10 +1,10 @@
-# paradiso
+# Paradiso
 
-A new Flutter project.
+Un proyecto sobre peliculas, con final feliz
 
-## Getting Started
+## Inicio
 
-This project is a starting point for a Flutter application.
+Este proyecto esta hecho con Flutter
 
 A few resources to get you started if this is your first Flutter project:
 
