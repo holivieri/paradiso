@@ -1,4 +1,3 @@
-import 'dart:js';
 
 import 'package:flutter/material.dart';
 import 'package:paradiso/src/models/pelicula_model.dart';
@@ -43,6 +42,7 @@ class MovieHorizontal extends StatelessWidget {
   }
 
   List<Widget> _tarjetas(BuildContext context) {
+    //no lo estoy usando. Se puede eliminar
     return peliculas.map( (pelicula) {
         return Container(
             margin:  EdgeInsets.only(right: 15.0),
@@ -71,7 +71,7 @@ class MovieHorizontal extends StatelessWidget {
 
   Widget _tarjeta(BuildContext context, Pelicula pelicula) {
 
-     return Container(
+    final tarjeta = Container(
             margin:  EdgeInsets.only(right: 15.0),
             child: Column(  
               children: <Widget>[
@@ -92,8 +92,15 @@ class MovieHorizontal extends StatelessWidget {
                   )
                   ],
             ),
-        )
+        );
 
+      return GestureDetector(
+        onTap: () {
+          print ('Titulo: ${ pelicula.title}');
+          Navigator.pushNamed(context, 'detalle', arguments: pelicula);
+        },
+        child: tarjeta
+        );
 
   }
 

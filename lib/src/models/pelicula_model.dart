@@ -77,6 +77,15 @@ class Pelicula {
     }
   }
 
+    getBackgroundImg() {
+
+    if ( backdropPath == null)  {
+      return 'http://www.clker.com/cliparts/q/L/P/Y/t/6/no-image-available-hi.png';
+    } else {
+        return 'https://image.tmdb.org/t/p/w500/$backdropPath';
+    }
+  }
+
 
 }
 
