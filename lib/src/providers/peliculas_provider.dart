@@ -90,7 +90,6 @@ class PeliculasProvider {
       final decodedData = json.decode(resp.body);
 
       final cast = new Cast.fromJsonList(decodedData['cast']);
-      print ( cast.actores);
       return cast.actores;
 
     }
