@@ -122,6 +122,7 @@ class PelicualDetalle extends StatelessWidget {
         child: PageView.builder(
           controller: PageController(initialPage: 1, viewportFraction: 0.3),
           pageSnapping: false,
+          itemCount: actores.length,
           itemBuilder:  (context, i) => _actorTarjeta(actores[i]),
         ),
       );
