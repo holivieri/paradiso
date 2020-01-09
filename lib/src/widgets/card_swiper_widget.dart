@@ -20,7 +20,7 @@ class CardSwiper extends StatelessWidget {
       child: Swiper(
           layout: SwiperLayout.STACK,
           itemWidth: _screenSize.width * 0.7,
-          itemHeight: _screenSize.height * 0.5,
+          itemHeight: _screenSize.height * 0.58,
           itemBuilder: (BuildContext context,int index){
             peliculas[index].uniqueId = '${ peliculas[index].id}-tarjeta';
 
