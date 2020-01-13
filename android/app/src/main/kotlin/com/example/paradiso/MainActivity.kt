@@ -1,4 +1,4 @@
-package com.example.paradiso
+package com.hernanolivieri.paradiso
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
